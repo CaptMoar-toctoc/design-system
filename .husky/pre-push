@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+#npm run test
+#npm run rollup
+#npm run build-storybook
+npm run lint -- --fix

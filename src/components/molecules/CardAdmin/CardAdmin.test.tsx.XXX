@@ -1,0 +1,104 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+import CardAdmin from './CardAdmin';
+/*
+describe("CardAdmin testing", () => {
+	const initProps = {
+		publicada: true,
+		labelCard: { text: 'Destacada', color: '#3200C1', bg: '#37FFDB' },
+		cardTitle: 'Moller Carlos Alvarado 6184',
+		programa: {
+			room: '2 a 3',
+			bath: '1 a 2',
+			mts: '205,6 a 250 m²',
+		},
+		precio: {
+			desde: '7.570',
+			hasta: '9.570',
+			simboloMoneda: 'UF'
+		},
+		clickCheckbox: () => { },
+		commune: 'Pedro Aguirre Cerda',
+		propertyType: 'Departamento',
+		operationType: 'Venta nuevo',
+		operationColor: '#3200C1',
+		imgUrl: 'https://d1cfu8v5n1wsm.cloudfront.net/toctoc/fotos/20211217/1897212/n_wm_2022070402394590351.jpg'
+	};
+
+	test('Render CardAdmin component', () => {
+		render(<CardAdmin {...initProps} />)
+	})
+
+	test("Render SnapShot", () => {
+		expect(render(<CardAdmin {...initProps} />)).toMatchSnapshot();
+	})
+
+	test(`Que exista el título "${initProps.cardTitle}"`, () => {
+		render(<CardAdmin {...initProps} />);
+		expect(screen.getByText(initProps.cardTitle)).toBeInTheDocument();
+	})
+
+	test(`Que exista "${initProps.propertyType}"`, () => {
+		render(<CardAdmin {...initProps} />);
+		let esto = new RegExp(initProps.propertyType, 'i')
+		expect(screen.getByText(esto)).toBeInTheDocument();
+	})
+	test(`Que exista "${initProps.precio.desde}"`, () => {
+		render(<CardAdmin {...initProps} />);
+		let esto = new RegExp(initProps.precio.desde, 'i')
+		expect(screen.getByText(esto)).toBeInTheDocument();
+	})
+	test(`Que exista la comuna "${initProps.commune}"`, () => {
+		render(<CardAdmin {...initProps} />);
+		let esto = new RegExp(initProps.commune, 'i')
+		expect(screen.getByText(esto)).toBeInTheDocument();
+	})
+	test(`Que exista "${initProps.labelCard.text}"`, () => {
+		render(<CardAdmin {...initProps} />);
+		let esto = new RegExp(initProps.labelCard.text, 'i')
+		expect(screen.getByText(esto)).toBeInTheDocument();
+	})
+
+})
+
+describe('CardAdmin despublicada Testing', () => {
+    const initProps = {
+		publicada: false,
+		labelCard: { text: 'Destacada', color: '#3200C1', bg: '#37FFDB' },
+		cardTitle: 'Moller Carlos Alvarado 6184',
+		programa: {
+			room: '2 a 3',
+			bath: '1 a 2',
+			mts: '205,6 a 250 m²',
+		},
+		precio: {
+			desde: '7.570',
+			hasta: '9.570',
+			simboloMoneda: 'UF'
+		},
+		clickCheckbox: () => { },
+		commune: 'Pedro Aguirre Cerda',
+		propertyType: 'Departamento',
+		operationType: 'Venta nuevo',
+		operationColor: '#3200C1',
+		imgUrl: 'https://d1cfu8v5n1wsm.cloudfront.net/toctoc/fotos/20211217/1897212/n_wm_2022070402394590351.jpg'
+	};
+    test('Render CardAdmin despublicada', () => {
+        const { container } = render(<CardAdmin {...initProps} />);
+		const miContainer = container.getElementsByClassName('despublicada');
+		expect(miContainer.length).toBe(1);
+    })
+})
+
+describe('CardAdmin Testing renders with empty props', () => {
+    const initProps = {};
+    test('Render CardAdmin component with empty props', () => {
+        const { container } = render(<CardAdmin {...initProps} />);
+		const miContainer = container.getElementsByClassName('card-admin');
+		expect(miContainer.length).toBe(0);
+    })
+})
+
+export { }
+*/
