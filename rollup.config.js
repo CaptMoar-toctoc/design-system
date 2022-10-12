@@ -6,7 +6,10 @@ import postcss from "rollup-plugin-postcss"
 import json from '@rollup/plugin-json';
 import babel from 'rollup-plugin-babel';
 //import svg from 'rollup-plugin-svg';
-import image from '@rollup/plugin-image';
+//import image from '@rollup/plugin-image';
+import svgicons from 'rollup-plugin-svg-icons'
+import svgToSymbol from 'rollup-plugin-svg-to-symbol'
+
 
 import packageJson from "./package.json";
 import PeerDepsExternalPlugin from "rollup-plugin-peer-deps-external";
@@ -30,10 +33,15 @@ export default [
 			},
 		],
 		plugins: [
+
 			resolve(),
 			json(),
+			svgicons({
+				inputFolder: 'src/components/atoms/Icons',
+				output: 'dist/bundle.svg'
+			}),
 			//svg(),
-			image(),
+			//image(),
 			//obfuscator(),
 			commonjs(),
 			PeerDepsExternalPlugin(),
@@ -44,7 +52,8 @@ export default [
 					"**/*.stories.tsx",
 					"**/__tests__",
 					"src/stories/**",
-					"**/__snapshots__"
+					"**/__snapshots__",
+					"**/*.svg"
 				]
 			}),
 			babel({
@@ -60,7 +69,12 @@ export default [
 				plugins: [['import', { libraryName: 'antd', style: true }]],
 				extensions: ['.js', '.jsx', '.ts', '.tsx'],
 				exclude: /\**node_modules\**/,
-			}
+			},
+			svgToSymbol({
+				extractId({ name }) {
+					return `${name}`
+				}
+			})
 		],
 		external: ['react', 'react-dom']
 	},
