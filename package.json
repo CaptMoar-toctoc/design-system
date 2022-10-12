@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toctoc/design-system.git"
+    "url": "git+https://github.com/captmoar-toctoc/design-system.git"
   },
   "author": "SFDG",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CaptMoar-toctoc/ds/issues"
+    "url": "https://github.com/CaptMoar-toctoc/design-system/issues"
   },
   "homepage": "https://github.com/CaptMoar-toctoc/ds#readme",
   "devDependencies": {
@@ -92,6 +92,6 @@
   ],
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/toctoc"
+    "registry": "https://npm.pkg.github.com/captmoar-toctoc"
   }
 }
