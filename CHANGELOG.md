@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/captmoar-toctoc/design-system/compare/v1.0.0...v1.1.0) (2022-10-12)
+
+
+### Features
+
+* **init:** testing libraries svg transform ([ba3340c](https://github.com/captmoar-toctoc/design-system/commit/ba3340cf3ddd815cb82811f1708248bdf17fa396))
+
 # 1.0.0 (2022-10-12)
 
 
