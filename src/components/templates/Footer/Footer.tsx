@@ -101,7 +101,7 @@ const Footer: FC<iProps> = ({ footerOptions, claseAux, ...props }) => {
 
 									<Typography variant='h4' fontSize={16} fontWeight={700} color={theme.palette.secondary.main} marginBottom={1}>Síguenos</Typography>
 
-									<RRSS color={'#FFFFFF'} sizeIcon={24} />
+									<RRSS color={'#FFFFFF'} sizeIcon={32} />
 
 									<Link href={data.contacto.link} target="_blank" fontSize={12} color={theme.palette.secondary.main} >{data.contacto.text}</Link>
 
