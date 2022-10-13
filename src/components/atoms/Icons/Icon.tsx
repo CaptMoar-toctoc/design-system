@@ -1,4 +1,5 @@
-import Icons from './icons.svg';
+//import Icons from './icons.svg';
+import  ReactComponent  from './*.svg'
 import iProps from './iProps'
 
 const Icon = ({ name, color, size, className}:iProps) => {
@@ -33,11 +34,12 @@ const Icon = ({ name, color, size, className}:iProps) => {
 			viewBox={`0 0 ${_size} ${_size}`}
 			// preserveAspectRatio="xMidYMin slice"
 		>
-			<use 
-				xlinkHref={`${Icons}#${name}`} 
-				width={_size} 
-				height={_size} 
-				strokeWidth={_strokeWidth} 
+			<ReactComponent 
+				//xlinkHref={`${Icons}#${name}`} 
+				//width={_size} 
+				//height={_size} 
+				//strokeWidth={_strokeWidth} 
+				witdh='1rem'
 			/>
 		</svg>
 	)
