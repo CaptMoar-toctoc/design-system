@@ -1,6 +1,7 @@
 export default interface iProps {
-	name: string;
+	name?: string;
 	className?: string;
 	size?:number;
 	color?:string;
+	strokeWith?: number;
 }
